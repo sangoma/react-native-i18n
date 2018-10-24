@@ -9,7 +9,6 @@ def _targetSdkVersion = _ext.has('targetSdkVersion') ? _ext.targetSdkVersion : 2
 
 android {
   compileSdkVersion _compileSdkVersion
-  buildToolsVersion _buildToolsVersion
 
   defaultConfig {
     minSdkVersion _minSdkVersion
@@ -22,5 +21,5 @@ android {
 }
 
 dependencies {
-  compile "com.facebook.react:react-native:+" // From node_modules
+  api "com.facebook.react:react-native:+" // From node_modules
 }
